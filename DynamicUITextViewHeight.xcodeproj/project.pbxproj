@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDA46D6B9FC219127132C88E /* Pods_DynamicUITextViewHeight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8785827B75F0952EFC58FE89 /* Pods_DynamicUITextViewHeight.framework */; };
 		C98E257A222A77E100DADE8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E2579222A77E100DADE8C /* AppDelegate.swift */; };
 		C98E257C222A77E100DADE8C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E257B222A77E100DADE8C /* RootViewController.swift */; };
 		C98E257E222A77E200DADE8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98E257D222A77E200DADE8C /* Assets.xcassets */; };
 		C98E2581222A77E200DADE8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98E257F222A77E200DADE8C /* LaunchScreen.storyboard */; };
+		C98E2589222A792500DADE8C /* DynamicTextViewSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E2588222A792500DADE8C /* DynamicTextViewSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		096CFA3ABC35D444FA408BB4 /* Pods-DynamicUITextViewHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicUITextViewHeight.debug.xcconfig"; path = "Target Support Files/Pods-DynamicUITextViewHeight/Pods-DynamicUITextViewHeight.debug.xcconfig"; sourceTree = "<group>"; };
+		2F286591F750E733819D2F5B /* Pods-DynamicUITextViewHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicUITextViewHeight.release.xcconfig"; path = "Target Support Files/Pods-DynamicUITextViewHeight/Pods-DynamicUITextViewHeight.release.xcconfig"; sourceTree = "<group>"; };
+		8785827B75F0952EFC58FE89 /* Pods_DynamicUITextViewHeight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicUITextViewHeight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98E2576222A77E100DADE8C /* DynamicUITextViewHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicUITextViewHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98E2579222A77E100DADE8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C98E257B222A77E100DADE8C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C98E257D222A77E200DADE8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C98E2580222A77E200DADE8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C98E2582222A77E200DADE8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98E2588222A792500DADE8C /* DynamicTextViewSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTextViewSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDA46D6B9FC219127132C88E /* Pods_DynamicUITextViewHeight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		625866C71C4338B8523A7238 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8785827B75F0952EFC58FE89 /* Pods_DynamicUITextViewHeight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C98E256D222A77E100DADE8C = {
 			isa = PBXGroup;
 			children = (
 				C98E2578222A77E100DADE8C /* DynamicUITextViewHeight */,
 				C98E2577222A77E100DADE8C /* Products */,
+				CD2A7769D173A1E3ED18B69C /* Pods */,
+				625866C71C4338B8523A7238 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +74,18 @@
 				C98E257D222A77E200DADE8C /* Assets.xcassets */,
 				C98E257F222A77E200DADE8C /* LaunchScreen.storyboard */,
 				C98E2582222A77E200DADE8C /* Info.plist */,
+				C98E2588222A792500DADE8C /* DynamicTextViewSize.swift */,
 			);
 			path = DynamicUITextViewHeight;
+			sourceTree = "<group>";
+		};
+		CD2A7769D173A1E3ED18B69C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				096CFA3ABC35D444FA408BB4 /* Pods-DynamicUITextViewHeight.debug.xcconfig */,
+				2F286591F750E733819D2F5B /* Pods-DynamicUITextViewHeight.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C98E2585222A77E200DADE8C /* Build configuration list for PBXNativeTarget "DynamicUITextViewHeight" */;
 			buildPhases = (
+				20EB981096CC3AB13BB482EB /* [CP] Check Pods Manifest.lock */,
 				C98E2572222A77E100DADE8C /* Sources */,
 				C98E2573222A77E100DADE8C /* Frameworks */,
 				C98E2574222A77E100DADE8C /* Resources */,
+				6C350C7AF89AE52A657EB9A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +155,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20EB981096CC3AB13BB482EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DynamicUITextViewHeight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C350C7AF89AE52A657EB9A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DynamicUITextViewHeight/Pods-DynamicUITextViewHeight-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DynamicUITextViewHeight/Pods-DynamicUITextViewHeight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C98E2572222A77E100DADE8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98E2589222A792500DADE8C /* DynamicTextViewSize.swift in Sources */,
 				C98E257C222A77E100DADE8C /* RootViewController.swift in Sources */,
 				C98E257A222A77E100DADE8C /* AppDelegate.swift in Sources */,
 			);
@@ -268,6 +345,7 @@
 		};
 		C98E2586222A77E200DADE8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096CFA3ABC35D444FA408BB4 /* Pods-DynamicUITextViewHeight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +364,7 @@
 		};
 		C98E2587222A77E200DADE8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F286591F750E733819D2F5B /* Pods-DynamicUITextViewHeight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
