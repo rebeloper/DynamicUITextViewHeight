@@ -14,14 +14,6 @@ class DynamicTextViewSize {
         
         var currentHeight: CGFloat!
         
-        let textView: UITextView = UITextView(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
-        textView.font = font
-        textView.text = text
-        textView.sizeToFit()
-        
-        currentHeight = textView.frame.height
-        textView.removeFromSuperview()
-        
         return currentHeight
     }
     
